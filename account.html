@@ -31,7 +31,7 @@
             <img src="imgs/—Pngtree—menu vector icon_4236988.png" class="menu-icon" width="30px" height="30px" onclick="menutoggle()">
         </div>   
     </div>
-    <!-- account page -->
+    <!-- Tài khoản -->
     <div class="account-page">
         <div class="container">
             <div class="row">
@@ -41,9 +41,9 @@
                 <div class="col-2">
                     <div class="form-container">
                         <div class="form-btn">
-                            <span onclick="login()">Đăng nhập</span>
-                            <span onclick="register()">Đăng ký</span>
-                            <hr id="Indicator">
+                            <span onclick="login()">Đăng ký</span>
+                            <span onclick="register()">Đăng nhập</span>
+                            <hr id="underline">
                         </div>
                         <form id="LoginForm">
                             <input type="text" placeholder="Tên đăng nhập">
@@ -116,16 +116,16 @@
     <script>
         var LoginForm = document.getElementById("LoginForm");
         var RegForm = document.getElementById("RegForm");
-        var Indicator = document.getElementById("Indicator");
+        var Indicator = document.getElementById("underline");
         function login(){
             RegForm.style.transform = "translateX(0px)";
             LoginForm.style.transform = "translateX(0px)";
-            Indicator.style.transform = "translateX(100px)";
+            Indicator.style.transform = "translateX(0px)";
         }
         function register(){
             RegForm.style.transform = "translateX(300px)";
             LoginForm.style.transform = "translateX(300px)";
-            Indicator.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
         }
     </script>
 </body>
