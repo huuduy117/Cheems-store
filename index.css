@@ -465,7 +465,7 @@ form a{
     background: #c23616;
     height: 3px;
     margin-top: 8px;
-    transform: translateX(100px);
+    transform: translateX(0px);
     transition: transform 0.5s;
 }
 /* media querry for less than 600 screen size */
